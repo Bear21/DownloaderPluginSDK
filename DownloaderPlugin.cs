@@ -56,6 +56,7 @@ namespace downloader
                     line = myFileStream.ReadLine().Split('|');
                     dictionary.Add(line[0], line[1]);
                 }
+                myFileStream.Close();
             }
             return dictionary;
         }
